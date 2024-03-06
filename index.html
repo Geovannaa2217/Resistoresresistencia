@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Aplicação: Caúculo de Resistência</title>
+	<link rel=“stylesheet” type=“text/css” href=“style.css”>.2 de fev. de 2023
+</head>
+<body>
+	<form>
+		<div> Faixa 01 -
+			<select id="faixa01">
+				<option value="0" class= "Preto" > Preto </option>
+				<option value="1" class= "Marrom"> Marrom </option>
+				<option value="2" class= "Vermelho"> vermelho </option>
+				<option value="3" class= "Laranja"> Laranja </option>
+				<option value="4" class="Amarelo"> Amarelo </option>
+				<option value="5" class= "Verde"> Verde </option>
+				<option value="6" class= "Azul"> Azul </option>
+				<option value="7" class="Violeta"> Violeta </option>
+				<option value="8" class="Cinza"> Cinza </option>
+				<option value="9" class= "Branco"> Branco </option>
+			</select>
+		</div>
+			<div> Faixa 02 -
+				<select id="faixa02">
+				<option value="0" class= "Preto"> Preto </option>
+				<option value="1" class= "Marrom"> Marrom </option>
+				<option value="2" class= "Vermelho"> Vermelho </option>
+				<option value="3" class= "Laranja"> Laranja </option>
+				<option value="4" class="Amarelo"> Amarelo </option>
+				<option value="5" class= "Verde"> Verde </option>
+				<option value="6" class= "Azul"> Azul </option>
+				<option value="7" class= "Violeta"> Violeta </option>
+				<option value="8" class= "Cinza"> Cinza </option>
+				<option value="9" Class= "Branco"> Branco </option>
+			</select>
+		</div>
+
+				<div> Faixa03 -
+				<select id="faixa03">
+					<option value="0" class= "Preto"> Preto </option>
+				<option value="1" class= "Marrom"> Marrom </option>
+				<option value="2" class= "Vermelho"> Vermelho </option>
+				<option value="3" class= "Laranja"> Laranja </option>
+				<option value="4" class="Amarelo"> Amarelo </option>
+				<option value="5" class= "Verde"> Verde </option>
+				<option value="6" class= "Azul"> Azul </option>
+				<option value="7" class= "Violeta"> Violeta </option>
+				<option value="8" class= "Cinza"> Cinza </option>
+				<option value="9" Class= "Branco"> Branco </option>
+				
+			</select>
+		</div>
+
+
+			
+			<div> Multiplicador -
+			<select id="multi">
+				<option value="1" class="Preto"> Preto </option>
+				<option value="10" class="Marrom"> Marrom </option>
+				<option value="100" class= "Vermelho"> Vermelho </option>
+				<option value="1000" class= "Laranja"> Laranja </option>
+				<option value="10,000" class="Amarelo"> Amarelo </option>
+				<option value="100,000" class="Verde"> Verde </option>
+				<option value="1000000" class="Azul"> Azul </option>
+				<option value="10,000000" class="Violeta"> Violeta </option>
+				<option value="1" class="Dourado"> Dourado </option>
+				<option value="0.1" class="Prata"> Prata </option>
+			</select>
+		</div>
+				
+				
+				<div> Tolerância -
+				<select id="toler"> 
+				<option value="0" class="Preto"> Preto </option>
+				<option value="1%" class="Marrom"> Marrom </option>
+				<option value="2%" class="Vermelho">Vermelho </option>
+				<option value="5%" class="Verde"> Verde </option>
+				<option value="25%" class="Azul"> Azul </option>
+				<option value="1%" class="Violeta"> Violeta </option>
+				<option value="05%" class="Cinza"> Cinza </option>
+				<option value="5%" class="Dourado"> Dourado </option>
+				<option value="10%" clas="Prata">Prata </option>
+			</div>
+			</select>		
+		</div>
+		<button type="button" onclick="FazerCauculo()"> Caucular </button>
+		<p> Resultado  <input type= "number" id="resultado" readonly> </p>
+		<p> Variação <input type= "number" id="toleran" readonly> </p>
+		<p> Diminuindo ou Aumentando <input type= "number" id="toln" readonly> </p>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
+<style>
+	.Preto{
+	background-color: black;
+	color: black;
+}
+.Marrom{
+	background-color: brown;
+	color: brown;
+}
+.Vermelho{
+	background-color: red;
+	color: red;
+}
+.Laranja{
+	background-color: orange;
+	color: orange;
+}
+.Amarelo{
+	background-color: yellow;
+	color: yellow;
+}
+.Verde{
+	background-color: green;
+	color: green;
+}
+.Azul{
+	background-color: blue;
+	color: blue;
+}
+	.Violeta{
+		background-color: violet;
+		color: violet;
+	}
+
+.Cinza{
+	background-color: gray;
+	color: gray;
+}
+.Branco{
+	background-color: white;
+	color: white;
+}
+.Dourado{
+	background-color: lightgoldenrodyellow;
+	color: lightgoldenrodyellow;
+}
+.Prata{
+	background-color: silver;
+	color: silver;
+}
+</style>
